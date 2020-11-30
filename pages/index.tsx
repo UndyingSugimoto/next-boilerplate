@@ -1,12 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 import Layout from '../components/layout';
 
-const Index: React.FC = () => {
+type Props = {
+  className?: string;
+};
+
+const Base: React.FC<Props> = ({ className }) => {
   return (
     <Layout>
-      <div>test</div>
+      <div className={className}>test</div>
     </Layout>
   );
 };
+
+const Index = styled(Base)`
+  color: blue;
+`;
 
 export default Index;

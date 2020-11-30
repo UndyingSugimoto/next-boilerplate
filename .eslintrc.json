@@ -11,6 +11,7 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:import/errors",
     "prettier/@typescript-eslint"
   ],
   "globals": {
@@ -25,7 +26,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "node", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "node", "prettier", "import"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
@@ -40,6 +41,9 @@
     // added by me
     "prettier/prettier": ["error", { "single": true }],
     "react/prop-types": [0],
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "sort-imports": 0,
+    "import/order": [2, { "alphabetize": { "order": "asc" } }],
+    "import/no-unresolved": "off"
   }
 }

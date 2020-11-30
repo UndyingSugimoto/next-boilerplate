@@ -1,5 +1,16 @@
 {
-  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
   "editor.tabSize": 2,
-  "css.validate": false
+  "cSpell.words": [
+    "Wellsport",
+    "fontawesome",
+    "fortawesome",
+    "presenteeism",
+    "ress"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

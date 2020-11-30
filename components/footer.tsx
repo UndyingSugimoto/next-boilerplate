@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <FooterTag>
       <div>footer-content</div>
-    </footer>
+    </FooterTag>
   );
 };
+
+const FooterTag = styled.footer`
+  color: green;
+`;
 
 export default Footer;
