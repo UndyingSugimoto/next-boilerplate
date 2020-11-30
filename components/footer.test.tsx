@@ -1,12 +1,12 @@
-// import Footer from 'components/footer';
-// import React from 'react';
-// import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import React from 'react';
+import Footer, { FooterTag } from './footer';
 import 'jest-styled-components';
 
 describe('Chart', () => {
   test('レンダリングの確認', () => {
-    // const wrapper = renderer.create(<Footer></Footer>).toJSON();
-    // expect(wrapper).toMatchSnapshot();
-    // expect(wrapper).toHaveStyleRule('color', 'red');
+    const wrapper = shallow(<Footer></Footer>);
+    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find(FooterTag).length).toBe(1);
   });
 });

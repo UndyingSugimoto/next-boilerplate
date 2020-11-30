@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart レンダリングの確認 1`] = `
+<styled.footer>
+  <div>
+    footer-content
+  </div>
+</styled.footer>
+`;

@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  // Next.jsでjestを使うためにはこのオプションの上書きが必要
+  "compilerOptions": {
+    "jsx": "react"
+  }
+}

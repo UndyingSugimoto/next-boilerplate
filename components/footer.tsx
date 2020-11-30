@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   );
 };
 
-const FooterTag = styled.footer`
+export const FooterTag = styled.footer`
   color: green;
 `;
 
